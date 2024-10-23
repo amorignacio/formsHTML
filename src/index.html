@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>04-Formularios</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+  </head>
+
+  <body>
+    <h2>Formulario de Registro</h2>
+
+    <form action="/submit" method="POST">
+      <!-- Campo de texto -->
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <br /><br />
+
+      <!-- Campo de contraseña -->
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+
+      <!-- Campo de correo electrónico -->
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <!-- Campo de número -->
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" />
+      <br /><br />
+
+      <!-- Campo de fecha -->
+      <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+      <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" />
+      <br /><br />
+
+      <!-- Campo de hora -->
+      <label for="hora-cita">Hora de cita:</label>
+      <input type="time" id="hora-cita" name="hora-cita" />
+      <br /><br />
+
+      <!-- Campo de número (con mínimo y máximo) -->
+      <label for="cantidad">Cantidad de entradas (1-10):</label>
+      <input type="number" id="cantidad" name="cantidad" min="1" max="10" />
+      <br /><br />
+
+      <!-- Campo de URL -->
+      <label for="sitio-web">Sitio web:</label>
+      <input type="url" id="sitio-web" name="sitio-web" />
+      <br /><br />
+
+      <!-- Campo de archivo -->
+      <label for="archivo">Subir archivo:</label>
+      <input type="file" id="archivo" name="archivo" />
+      <br /><br />
+
+      <!-- Campo de color -->
+      <label for="color-favorito">Color favorito:</label>
+      <input type="color" id="color-favorito" name="color-favorito" />
+      <br /><br />
+
+      <!-- Campo de rango -->
+      <label for="satisfaccion">Nivel de satisfacción (1-10):</label>
+      <input
+        type="range"
+        id="satisfaccion"
+        name="satisfaccion"
+        min="1"
+        max="10"
+      />
+      <br /><br />
+
+      <!-- Campo de selección única (radio buttons) -->
+      <p>Género:</p>
+      <input type="radio" id="masculino" name="genero" value="masculino" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="femenino" name="genero" value="femenino" />
+      <label for="femenino">Femenino</label>
+      <input type="radio" id="otro" name="genero" value="otro" />
+      <label for="otro">Otro</label>
+      <br /><br />
+
+      <!-- Campo de selección múltiple (checkboxes) -->
+      <p>Intereses:</p>
+      <input type="checkbox" id="musica" name="intereses" value="musica" />
+      <label for="musica">Música</label>
+      <input type="checkbox" id="deportes" name="intereses" value="deportes" />
+      <label for="deportes">Deportes</label>
+      <input type="checkbox" id="viajes" name="intereses" value="viajes" />
+      <label for="viajes">Viajes</label>
+      <br /><br />
+
+      <!-- Campo de selección (dropdown) -->
+      <label for="pais">País:</label>
+      <select id="pais" name="pais">
+        <option value="">Seleccionar opcion</option>
+        <option value="argentina">Argentina</option>
+        <option value="colombia">Colombia</option>
+        <option value="espana" disabled>España</option>
+        <option value="peru">Perú</option>
+        <option value="uru">Uruguay</option>
+        <option value="ven">Venezuela</option>
+      </select>
+      <br /><br />
+
+      <!-- Campo de área de texto -->
+      <label for="comentarios">Comentarios:</label>
+      <textarea
+        id="comentarios"
+        name="comentarios"
+        rows="4"
+        cols="50"
+      ></textarea>
+      <br /><br />
+
+      <!-- Botón de envío -->
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

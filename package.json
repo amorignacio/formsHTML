@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "cd ./src && servor --reload"
+  },
+  "dependencies": {
+    "servor": "^4.0.2"
+  }
+}
